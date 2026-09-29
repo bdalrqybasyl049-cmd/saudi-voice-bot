@@ -23,7 +23,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 BOT_TOKEN = "8727272025:AAHZlD6qmL6l4JpteY2OUTdReOFV6d6eh3I"
 
 # ضع مفتاح Replicate API الخاص بك بين التنصيص هنا
-REPLICATE_API_TOKEN = "r8_bjHiDVk5xfwoUa0lXenhg6jvqKtZOMF0IwEDE"
+REPLICATE_API_TOKEN = "r8_K9Km34XfNkFqqzguUWrl3XO5c3A7Ao10oYS7B"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
