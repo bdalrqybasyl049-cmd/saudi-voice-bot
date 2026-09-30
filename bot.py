@@ -69,13 +69,13 @@ def generate_elevenlabs_audio(text, voice_id, output_path):
     }
     try:
         response = requests.post(url, json=data, headers=headers, timeout=15)
-        if response.status_code == 200:
+                if response.status_code == 200:
             with open(output_path, "wb") as f:
                 f.write(response.content)
             return True
         else:
-    logging.warning(f"ElevenLabs Error: {response.status_code} - {response.text}")
-    return False
+            logging.warning(f"ElevenLabs Error: {response.status_code} - {response.text}")
+            return False
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if "selected_voice" not in context.user_data:
