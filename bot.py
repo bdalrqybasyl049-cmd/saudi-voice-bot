@@ -19,7 +19,8 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY")
+ELEVENLABS_API_KEY = "sk_9fac2fbcf21fbb98b281d38e6af67909e08e7182e7adfe00"
+
 
 # أصوات ElevenLabs المحددة (يمكنك تغيير الـ Voice ID لاحقاً)
 ELEVEN_VOICES = {
