@@ -56,10 +56,11 @@ def generate_elevenlabs_audio(text, voice_id, output_path):
         
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
     headers = {
-        "Accept": "audio/mpeg",
-        "Content-Type": "application/json",
-        "xi-api-key": ELEVENLABS_API_KEY
-    }
+    "Accept": "audio/mpeg",
+    "Content-Type": "application/json",
+    "xi-api-key": ELEVENLABS_API_KEY
+}
+
     data = {
         "text": text,
         "model_id": "eleven_multilingual_v4",
