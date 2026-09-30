@@ -23,7 +23,7 @@ ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 
 # أصوات ElevenLabs المحددة (يمكنك تغيير الـ Voice ID لاحقاً)
 ELEVEN_VOICES = {
-    "sa_f": "21m00Tcm4TlvDq8ikWAM",
+    "sa_f": "ZXZq039skp0kfF9gO7Au",  # Aesthetic Calm Female Narrator
     "sa_m": "ErXwobaYiN019PkySvjV",
 }
 
