@@ -24,10 +24,9 @@ ELEVENLABS_API_KEY = "sk_9fac2fbcf21fbb98b281d38e6af67909e08e7182e7adfe00"
 
 # أصوات ElevenLabs المحددة (يمكنك تغيير الـ Voice ID لاحقاً)
 ELEVEN_VOICES = {
-    "sa_f": "21m00Tcm4TlvDq8ikWAM",  # صوت Rachel المستقر والمتاح مجاناً
-    "sa_m": "ErXwobaYiN019PkySvjV",
+    "sa_f": "21m00Tcm4TlvDq8ikWAM",  # Rachel (صوت مجاني أساسي ومضمون)
+    "sa_m": "ErXwobaYiN019PkySvjV",  # Antoni
 }
-
 # قائمة الأصوات الكاملة لـ Edge-TTS والدعم الاحتياطي
 VOICES = {
     "sa_f": {"name": "🇸🇦 سعودي (أنثى - زارية)", "voice": "ar-SA-ZariyahNeural"},
