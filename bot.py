@@ -136,6 +136,7 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("voices", voices_command))
     app.add_handler(CallbackQueryHandler(button_callback))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
+   
+    print("Bot is running...") 
+    app.run_polling(drop_pending_updates=True)
     
-    print("Bot is running...")
-    app.run_polling()
