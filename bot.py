@@ -75,11 +75,8 @@ def generate_elevenlabs_audio(text, voice_id, output_path):
                 f.write(response.content)
             return True
         else:
-            logging.warning(f"ElevenLabs failed/out of characters. Status: {response.status_code}")
-            return False
-    except Exception as e:
-        logging.error(f"ElevenLabs request error: {e}")
-        return False
+    logging.warning(f"ElevenLabs Error: {response.status_code} - {response.text}")
+    return False
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if "selected_voice" not in context.user_data:
